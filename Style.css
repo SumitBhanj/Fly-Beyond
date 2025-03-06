@@ -1,0 +1,289 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color:#f4f5fa;
+}
+header{
+    background: #323332;
+    top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+li {
+    display: inline;
+    float: left;
+    text-transform: uppercase;
+}
+a{
+    padding: 18px;
+    color: white;
+    text-decoration: none;
+}
+.left li a:hover {
+    background-color: rgb(83, 83, 83);
+    transition: 0.5s;
+}
+img{
+    width: 171px;
+    height: 59px;
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 22px 18px 22px 18px;
+    overflow: hidden;
+    
+}
+.right input{
+    float: right;
+    margin-top: 8px;
+    margin-right: 12px;
+    font-size: 15px;
+    padding: 3px 17px;
+    width: 250px;
+    height: 23.6px ;
+}
+.navbar{
+    border:0;
+    margin:0;
+}
+.mx-2{
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+}
+.section{
+    background-color:#f4f5fa; 
+    height: 122vh;
+}
+.content{
+    position: relative;
+    width: 99.86%;
+    height: 80%;
+    color: white;
+    z-index: 1;
+}
+.content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    border: 1px solid black;
+    background: url('Paris\ 2.png')no-repeat center center/cover;
+    background-size: 1262px 576px;
+    z-index: -1;
+}
+.content h2{
+    text-align: left;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 600;
+    font-size: 35px;
+}
+.content h1{
+    text-align: left;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 600;
+    font-size: 35px;
+    margin-left: 15px;
+}
+.content .cont_box{
+    padding: 30px;
+}
+.content .cont_box button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: #000;
+    color:#fff;
+    outline: none;
+}
+.content .cont_box button:hover{
+    background:#cea638 ;
+    transition: 0.5s;
+}
+.trip_box{
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+.trip_box .search_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white ;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    z-index: 1;
+    padding: 10px 20px;
+}
+.trip_box .search_box .card{
+    width: 200px;
+    height: 100%;
+    color: #000;
+}
+.trip_box .search_box .card h4{
+    font-size: 15px;
+    margin: 0;
+    font-weight: 5;
+    font-family: "Open Sans", sans-serif;
+}
+.trip_box .search_box .card h4 .bi{
+    position: absolute;
+    font-size: 13px;
+    margin: 2px 0px 0px 5px;
+    transition: .3s linear;
+}
+.trip_box .search_box .card input{
+    margin-top:3px;
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+}
+.trip_box .search_box input[type="button"]{
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+.trip_box .search_box input[type="button"]:hover{
+    background: #cea638;
+}
+
+.trip_box .travel_box{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    top: 30px;
+    color: black;
+    font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.trip_box .travel_box::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgb(241,241,241, .7);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+}
+
+.trip_box .travel_box h4{
+    margin: 0;
+    padding: 60px 0px 15px 1.7%;
+} 
+.trip_box .travel_box .cards{
+    width: 96%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.trip_box .travel_box .cards .card{
+    width: 220px;
+    height: 180px;
+} 
+.trip_box .travel_box .cards .card h3{
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+} 
+.trip_box .travel_box .cards .card img{
+    width: 100%;
+    height: 60%;
+} 
+.trip_box .travel_box .cards .card .btn_city{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.trip_box .travel_box .cards .card .btn_city a{
+    text-decoration: none;
+    background: black;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 12px;
+    transition: .3s linear;
+} 
+.trip_box .travel_box .cards .card .btn_city a:hover{
+    background:#cea638 ;
+}
+.trip_box .travel_box .cards .card .btn_city h5{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 5px;
+    line-height: 15px;
+}
+.offers{
+    width: 94.5%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+}
+.offers h1{
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    font-size: 50;
+    font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+.offers h3{
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+.offers h2{
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    font-size: 50;
+    font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+.offers .cards{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.offers .cards .card{
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.offers .cards .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.offers .cards .card img{
+    width: 100%;
+    height: 60%;
+    margin-bottom: 5px;
+}
+.margin{
+    padding: 15px;
+}
